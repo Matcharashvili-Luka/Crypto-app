@@ -6,9 +6,13 @@ import Navbar from './Components/Navbar';
 import Coin from './Pages/Coin';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+
 function App() {
   const [coins, setCoins] = useState([]);
 
+  const [searchCoin, setSearchCoin] = useState('');
+
+  // coins info api set 
   const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=1000&page=1&sparkline=false';
   
   useEffect(() => {
@@ -17,14 +21,22 @@ function App() {
     }).catch((err) => {
       console.log(err)
     })
-  }, [])
+  }, []);
 
   return (
     <Router>
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path='/' element={<Coins coins={coins} />}/>
+          <Route 
+            path='/' 
+            element={
+            <Coins 
+              coins={coins} 
+              searchCoin={searchCoin} 
+              setSearchCoin={setSearchCoin}
+            />}
+          />
         </Routes>
         <Routes>
           <Route path='/coin' element={<Coin />}>

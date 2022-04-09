@@ -9,6 +9,7 @@ function MainData({ coin }) {
             </span>
         </div>
         <div className="info">
+            {/* if there is X return X otherwise return nothing */}
             <div className="coin-heading">
                 {coin.image ? <img src={coin.image.small} alt='' /> : null}
                 <p>{coin.name}</p>

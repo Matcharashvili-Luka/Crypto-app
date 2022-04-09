@@ -7,7 +7,7 @@ function Navbar() {
     <Link to='/'>
       <div className='navbar'>
           <i className="fa-solid fa-coins"></i>
-          <h1><span>Coin</span> Search</h1>
+          <h1><span>Crypto</span> Currency</h1>
       </div>
     </Link>
   )
