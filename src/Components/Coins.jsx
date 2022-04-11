@@ -4,11 +4,13 @@ import '../Style/Coins.css';
 import Coin from '../Pages/Coin';
 import { Link } from 'react-router-dom';
 import SearchBar from '../Components/SearchBar';
+import Carousel from './Carousel/Carousel';
 
 function Coins({ coins, searchCoin, setSearchCoin }) {
   return (
     <div className='container'>
         <div>
+            <Carousel />
             <SearchBar 
                 setSearchCoin={setSearchCoin}
                 searchCoin={searchCoin}
