@@ -20,6 +20,7 @@ export default function Carousel() {
   useEffect(() => {
     axios.get(url).then((response) => {
       setCoins(response.data)
+      console.log(response.data)
     }).catch((err) => {
       console.log(err)
     })
