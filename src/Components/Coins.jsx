@@ -39,7 +39,7 @@ function Coins({ coins, searchCoin, setSearchCoin }) {
                             <CoinItem coins={coins} />
                         </Link>
                     )
-                })
+                })       
             }
         </div>
     </div>
