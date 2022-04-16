@@ -21,7 +21,7 @@ function Stats({ coin }) {
               </div>
               <div className="row">
                   <h4>Circulating Supply</h4>
-                  {coin.market_data ? <p>{coin.market_data.circulating_supply}</p> : null}
+                  {coin.market_data ? <p>{coin.market_data.circulating_supply.toFixed(2)}</p> : null}
               </div>
           </div>
       </div>
