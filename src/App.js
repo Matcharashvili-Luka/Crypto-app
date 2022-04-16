@@ -40,32 +40,33 @@ function App() {
 
   return (
     <Router>
-      <div className="App">
-        <Navbar />
-
-        <Routes>
-          <Route 
-            path='/' 
-            element={
-            <Coins 
-              coins={coins} 
-              searchCoin={searchCoin} 
-              setSearchCoin={setSearchCoin}
-            />}
-          />
-        </Routes>
-        <Routes>
-          <Route path='/coin' element={<Coin />}>
-            <Route path=':coinID' element={<Coin />}/>
-          </Route>
-        </Routes>
-        
-        {bactToTop && (
-          <i 
-            className="fa-solid fa-circle-arrow-up"
-            onClick={scrollUp}
-          ></i>
-        )}
+      <div className='App'>
+        <div className="mainApp">
+          <Navbar />
+          <Routes>
+            <Route 
+              path='/' 
+              element={
+              <Coins 
+                coins={coins} 
+                searchCoin={searchCoin} 
+                setSearchCoin={setSearchCoin} 
+              />}
+            />
+          </Routes>
+          <Routes>
+            <Route path='/coin' element={<Coin />}>
+              <Route path=':coinID' element={<Coin />}/>
+            </Route>
+          </Routes>
+          
+          {bactToTop && (
+            <i 
+              className="fa-solid fa-circle-arrow-up"
+              onClick={scrollUp}
+            ></i>
+          )}
+        </div>
       </div>
     </Router>
   );

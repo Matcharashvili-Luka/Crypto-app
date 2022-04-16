@@ -41,3 +41,7 @@ h1{
     border-radius: 50%;
     outline: 2px solid #fff;
 }
+
+.App{
+    overflow: hidden;
+}

@@ -1,7 +1,10 @@
 .navbar{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    padding: 0rem 1rem;
 }
 
 .fa-coins{
@@ -12,3 +15,5 @@
 .navbar h1 span{
     color: var(--blue);
 }
+
+

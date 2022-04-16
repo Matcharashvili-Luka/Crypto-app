@@ -1,0 +1,39 @@
+.openedWL{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 90vh;
+    width: 300px;
+    background-color: red;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 111111;
+    transition: right 2s;
+    border-radius: 1rem;
+    padding: 4rem 2rem 2rem 2rem;
+}
+
+.closedWL{
+    position: absolute;
+    top: 20px;
+    right: -300px;
+    height: 90vh;
+    width: 300px;
+    background-color: red;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 111111;
+    transition: right 2s;
+    border-radius: 1rem;
+    padding: 4rem 2rem 2rem 2rem;
+}
+
+.openedWL::-webkit-scrollbar{
+    width: 0;
+}
+
+.closedWL::-webkit-scrollbar{
+    width: 0;
+}

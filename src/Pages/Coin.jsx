@@ -30,7 +30,7 @@ function Coin() {
             <div className="contenet">
                 <h1>{coin.name}</h1>
             </div>
-            <MainData coin={coin}/>
+            <MainData coin={coin} />
             <MarketData coin={coin}/>
             <Stats coin={coin}/>
             <Content coin={coin}/>

@@ -6,9 +6,9 @@ function Navbar() {
   return (
     <Link to='/'>
       <div className='navbar'>
-          <i className="fa-solid fa-coins"></i>
-          <h1><span>Crypto</span> Currency</h1>
-      </div>
+        <i className="fa-solid fa-coins"></i>
+        <h1><span>Crypto</span> Currency</h1>
+      </div>    
     </Link>
   )
 }

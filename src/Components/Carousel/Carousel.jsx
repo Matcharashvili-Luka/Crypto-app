@@ -20,7 +20,6 @@ export default function Carousel() {
   useEffect(() => {
     axios.get(url).then((response) => {
       setCoins(response.data)
-      console.log(response.data)
     }).catch((err) => {
       console.log(err)
     })
@@ -41,7 +40,7 @@ export default function Carousel() {
         // loopFillGroupWithBlank={true}
         navigation={true}
         autoplay={{ 
-          delay: 2500,
+          delay: 2000,
           disableOnInteraction: false
         }}
         className="mySwiper"
